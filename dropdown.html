@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Scroll Example</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 200px; /* Set the max height for the scroll */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a class="dropbtn">Dropdown Menu</a>
+                <div class="dropdown-content">
+                    <a href="#">Item 1</a>
+                    <a href="#">Item 2</a>
+                    <a href="#">Item 3</a>
+                    <a href="#">Item 4</a>
+                    <a href="#">Item 5</a>
+                    <a href="#">Item 6</a>
+                    <a href="#">Item 7</a>
+                    <a href="#">Item 8</a>
+                    <a href="#">Item 9</a>
+                    <a href="#">Item 10</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
